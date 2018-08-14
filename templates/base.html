@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sleep Stage Classification</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar navbar-light navbar-fixed-top" role="navigation" style="background-color: #e3f2fd;">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="{{ url_for('home')}}">Sleep Stage Classification</a>
+        </div>
+		<ul class="nav navbar-nav navbar-right">
+			{% if SignIn %}
+		    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+		  	{% endif %}
+			{% if SignUp %}
+			<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			{% endif %}
+		</ul>
+      </div>
+    </div>
+    <div class="container">
+      {% block container %}{% endblock %}
+    </div>
+
+	<!-- Footer -->
+	<footer class="page-footer font-small blue">
+
+	  <!-- Copyright -->
+	  <div class="footer-copyright text-center py-3">
+		Supported by Machine Learning and Computer Vision Laboratory, University of Indonesia
+	  </div>
+	  <!-- Copyright -->
+
+	</footer>
+	<!-- Footer -->
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  </body>
+</html>
