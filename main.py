@@ -28,8 +28,9 @@ def scan():
 
 @app.route("/")
 def index():
-	return "Welcome to Indonesia Electronic KTP Middleware"
-	#return render_template('index.html')
+	#return "Welcome to Indonesia Electronic KTP Middleware"
+	name="ganteng"
+	return render_template('index.peuyeum', name=name)
 
 	
 @app.route("/<gurih>")
