@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 from flask import render_template
 from flask import Flask,abort,Response
 app = Flask(__name__)
@@ -30,6 +31,12 @@ def home():
 	name="ganteng"
 	return render_template('home.html', products=PRODUCTS, SignIn=True, SignUp=True)
 	
+@app.route("/process")
+def process():
+	name="ganteng"
+	return render_template('process.html', products=PRODUCTS, SignIn=True, SignUp=True)
+
+
 @app.route('/product/<key>')
 def product(key):
     product = PRODUCTS.get(key)
