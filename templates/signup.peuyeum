@@ -1,0 +1,78 @@
+{% extends 'base.peuyeum' %}
+ 
+{% block container %}
+
+<div class="row top-buffer">
+    <div class="col-sm-6">
+		<p class="text-body">
+			To acquire a user account, please print the End User License Agreement (EULA, download below), sign it, and scan it. Fill in the form to the right and include the signed EULA as a pdf.</p><p class="text-body">
+			Please note, we only accept requests from academic (i.e. university) email-addresses. <b>Any requests from free email addresses (hotmail, yahoo, gmail etc) will be refused.</b></p><p class="text-body">
+			After submission of the form, it may take up to a week for your account to be activated (you will be notified by email).
+			
+		</p>
+
+	</div>
+    <div class="col-sm-6">
+	
+	
+		<form class="form-horizontal" role="form">
+		     
+		                <div class="form-group">
+		                    <label for="firstName" class="col-sm-3 control-label">First Name*</label>
+		                    <div class="col-sm-9">
+		                        <input type="text" id="firstName" placeholder="First Name" class="form-control" autofocus>
+		                    </div>
+		                </div>
+		                <div class="form-group">
+		                    <label for="lastName" class="col-sm-3 control-label">Last Name*</label>
+		                    <div class="col-sm-9">
+		                        <input type="text" id="lastName" placeholder="Last Name" class="form-control" autofocus>
+		                    </div>
+		                </div>
+		                <div class="form-group">
+		                    <label for="affiliation" class="col-sm-3 control-label">Affiliation*</label>
+		                    <div class="col-sm-9">
+		                        <input type="text" id="affiliation" placeholder="Affiliation" class="form-control" autofocus>
+		                    </div>
+		                </div>
+		                <div class="form-group">
+		                    <label for="email" class="col-sm-3 control-label">Email* </label>
+		                    <div class="col-sm-9">
+		                        <input type="email" id="email" placeholder="Email" class="form-control" name= "email">
+		                    </div>
+		                </div>
+		                <div class="form-group">
+		                    <label for="password" class="col-sm-3 control-label">Password*</label>
+		                    <div class="col-sm-9">
+		                        <input type="password" id="password" placeholder="Password" class="form-control">
+		                    </div>
+		                </div>
+		                <div class="form-group">
+		                    <label for="password" class="col-sm-3 control-label">Confirm Password*</label>
+		                    <div class="col-sm-9">
+		                        <input type="password" id="password" placeholder="Password" class="form-control">
+		                    </div>
+		                </div>
+
+						<div class="form-group">
+		                    <label for="password" class="col-sm-3 control-label">Signed EULA (pdf)*</label>
+		                    <div class="col-sm-9">
+		                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+		                    </div>
+		                </div>
+
+		 
+		                <div class="form-group">
+		                    <div class="col-sm-9 col-sm-offset-3">
+		                        <span class="help-block">*Required fields</span>
+		                    </div>
+		                </div>
+		                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+		            </form>
+	
+	
+	
+	</div>
+</div>
+
+{% endblock %}

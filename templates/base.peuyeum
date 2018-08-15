@@ -16,14 +16,15 @@
         </div>
 		<ul class="nav navbar-nav navbar-right">
 			{% if SignIn %}
-		    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+		    <li><a href="signin"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
 		  	{% endif %}
 			{% if SignUp %}
-			<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			<li><a href="signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 			{% endif %}
 		</ul>
       </div>
     </div>
+
     <div class="container">
       {% block container %}{% endblock %}
     </div>
