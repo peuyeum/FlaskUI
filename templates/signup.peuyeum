@@ -5,7 +5,7 @@
 <div class="row top-buffer">
     <div class="col-sm-6">
 		<p class="text-body">
-			To acquire a user account, please print the End User License Agreement (EULA, download below), sign it, and scan it. Fill in the form to the right and include the signed EULA as a pdf.</p><p class="text-body">
+			To acquire a user account, please print the Service Level Aggrement (SLA, download below), sign it, and scan it. Fill in the form to the right and include the signed SLA as a pdf.</p><p class="text-body">
 			Please note, we only accept requests from academic (i.e. university) email-addresses. <b>Any requests from free email addresses (hotmail, yahoo, gmail etc) will be refused.</b></p><p class="text-body">
 			After submission of the form, it may take up to a week for your account to be activated (you will be notified by email).
 			
@@ -55,7 +55,7 @@
 		                </div>
 
 						<div class="form-group">
-		                    <label for="password" class="col-sm-3 control-label">Signed EULA (pdf)*</label>
+		                    <label for="password" class="col-sm-3 control-label">Signed SLA (pdf)*</label>
 		                    <div class="col-sm-9">
 		                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
 		                    </div>
